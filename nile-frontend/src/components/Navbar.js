@@ -41,7 +41,7 @@ const Navbar = () => {
   return (
     <BsNavbar bg="dark" variant="dark" expand="lg">
       <Container>
-        <BsNavbar.Brand as={Link} to="/">Nile</BsNavbar.Brand>
+        <BsNavbar.Brand as={Link} to="/"style={{ color: '#1a73e8' }}>Nile</BsNavbar.Brand>
         <Nav className="ms-auto align-items-center">
           {isAuthenticated() ? (
             <>
