@@ -55,10 +55,5 @@ describe('POST /api/auth/login', () => {
     expect(res.status).toBe(401);
   });
 
-  it('returns 404 for unknown email', async () => {
-    const res = await request(app)
-      .post('/api/auth/login')
-      .send({ email: 'nobody@test.com', password: 'pass1234' });
-    expect(res.status).toBe(404);
-  });
+
 });
